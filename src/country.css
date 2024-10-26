@@ -1,0 +1,39 @@
+.box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    color: black;
+    font-size: small;
+    font-weight: 800;
+    border: 2px solid black;
+    margin-top: 5px;
+    padding:5px;
+    
+}
+.visited{
+  background-color: rgba(151, 76, 221, 0.856);
+  color: aliceblue;
+}
+.btn:hover{
+    background-color: purple;
+    color: beige;
+    border: 2px solid blueviolet;
+    
+}
+@media screen and (max-width: 590px) {
+    .box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width: 590px) and (max-width: 1080px) {
+    .box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
